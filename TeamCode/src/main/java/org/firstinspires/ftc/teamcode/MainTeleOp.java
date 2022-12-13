@@ -20,12 +20,10 @@ public class MainTeleOp extends LinearOpMode{
 
             DriveTrain.mecanumDrive(-gamepad1.left_stick_y * 0.35, gamepad1.left_stick_x * 0.35, gamepad1.right_stick_x * 0.35);
 
-            if(gamepad1.x)
-                Arm.claw.setPosition(0);
+            if(gamepad1.a)
+                Arm.claw.setPosition(.06);
             if(gamepad1.y)
-                Arm.claw.setPosition(0.5);
-            if(gamepad1.b)
-                Arm.claw.setPosition(1);
+                Arm.claw.setPosition(.3);
 
             /*if(!gamepad1.x){
                 DriveTrain.leftFront.setPower(power);
